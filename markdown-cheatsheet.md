@@ -24,7 +24,7 @@ ___
 > this is a block
 
 <!--  links -->
-[This is a link](Readme.md)
+[This is a link](README.md)
 
 [This is a link with tooltip](kerrsid.png "tooltip")
 
