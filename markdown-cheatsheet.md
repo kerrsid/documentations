@@ -24,9 +24,9 @@ ___
 > this is a block
 
 <!--  links -->
-[This is a link](kerrsid.com)
+[This is a link](Readme.md)
 
-[This is a link with tooltip](kerrsid.com "tooltip")
+[This is a link with tooltip](kerrsid.png "tooltip")
 
 <!-- Unordered List -->
 * item1
