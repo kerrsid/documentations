@@ -73,8 +73,3 @@ print("Hi there")
 <!-- task list -->
 * [x] done
 * [ ] not done
-
-<!-- variables -->
-This is my [test] located somewhere in my Markdown document.
-
-[test]: test code
