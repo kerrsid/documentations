@@ -1,8 +1,8 @@
 # Introduction
 
-We know that each microservice owns its data. A microservice owns its own data that micro database is exclusivelt owned by that serrvice and if the service no longer needs it the that micro database is obsolete and can ve removed.
+A microservice owns its own data that micro database is exclusively owned by that service and if the service no longer needs it that micro database is obsolete and can be removed.
 
-What's really interesting is each of these micro databases can be optimized for the task at hand. They don't all need to be same type of database vendor or database type. 
+What's really interesting is each of these micro databases can be optimized for the task at hand. They don't all need to be the same type of database vendor or database type. 
 
 
 * Characteristics
@@ -12,10 +12,10 @@ What's really interesting is each of these micro databases can be optimized for 
 * Examples
 
 # Contents
-* [Relational (SQL)](#relational-sql)
-* [Document Databases (NoSQL)](#document-databases-nosql)
-* [Graph](#graph)
-* [Key/Value](#key-value)
+* [Relational (SQL)](#relational-database-sql)
+* [Document (NoSQL)](#document-databases-nosql)
+* [Graph](#graph-databases)
+* [Key/Value](#keyvalue-databases)
 * [Time series](#time-series)
 * [Search](#search)
 * [Object (blob)](#object-blob)
@@ -23,7 +23,7 @@ What's really interesting is each of these micro databases can be optimized for 
 * [Column store](#column-store)
 * [Hybrid / Multi-Model](#hybrid-multi-model)
 
-# Relational (SQL)
+# Relational Database (SQL)
 ```
                 Pros                             Cons        
 ────────────────────────────────────────────────────────────────────────      Characteristics
@@ -56,4 +56,35 @@ Best use-case: Need to render exactly one very fast
     ● news site
     ● CMS
 Examples: MongoDB, Firebase
+```
+# Graph Databases
+```
+                Pros                             Cons        
+────────────────────────────────────────────────────────────────────────      Characteristics
+   ● Fast to join across                 ● Doesn't do other things            ● Focus is on connections
+     relationships                         well                               ● Two object types:
+    E.g. friends of friends               E.g. cross-table joins are            ■ nodes
+                                            really expensive                    ■ relationships
+                                            
+Best use-case: 
+    ● messaging apps
+    ● social networks
+    ● recommendation engine
+Examples: Neo4j
+```
+# Key/Value Databases
+```
+                Pros                             Cons        
+────────────────────────────────────────────────────────────────────────     Characteristics
+ ● Really fast for "by id" queries    ● Can't query by non-key fields:       ● Given a key, read or write a value
+ ● Can store different data in          It's just a binary blob              ● Often the data is a JSON object or text blob
+   each record (schema-less)                                                 ● Think: a table with two columns:
+                                                                                        ■ a primary key
+                                                                                        ■ a binary blob
+                                                                                        
+Best use-case: 
+    ● cache
+    ● configuration
+    ● user session data
+Examples: Redis, Memcached
 ```
