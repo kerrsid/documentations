@@ -18,6 +18,7 @@ When the installation finishes, Docker starts automatically. The whale ![whale](
     -  **[Docker Desktop WSL 2 backend](https://docs.docker.com/docker-for-windows/wsl/)**
     -  **[How To Install and Use Docker on Ubuntu 20-04(Tutorial)](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)**
 
+*TBD, if wsl engine on distro is not wsl version 2
 
 ## Install Ubuntu
 Get **Ubuntu 20.04 LTS** From Microsoft Store 
