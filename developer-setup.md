@@ -46,6 +46,8 @@ sudo apt update
 sudo apt upgrade
 sudo apt install apache2
 sudo service apache2 start
+sudo a2enmod headers
+sudo a2enmod rewrite
 ```
 To check if Apache is running you run this command:
 ```sh
@@ -82,7 +84,7 @@ php -v
 
 ### MySQL
 Open VS Code with Ubuntu distro and open the folder ```home/```, create a new file call ```docker-compose.yml``` 
-(!By default this file will be read-only. Use chwon command [$ chown ownerName fileName] from VS Code terminal to make it writable) 
+(!By default this file will be read-only. Use chmod command [$ sudo chmod -R 777 fileName] from VS Code terminal to make it writable) 
 and insert:
 ```docker
 version: "3.9"
