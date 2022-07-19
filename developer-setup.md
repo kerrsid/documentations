@@ -18,7 +18,15 @@ When the installation finishes, Docker starts automatically. The whale ![whale](
     -  **[Docker Desktop WSL 2 backend](https://docs.docker.com/docker-for-windows/wsl/)**
     -  **[How To Install and Use Docker on Ubuntu 20-04(Tutorial)](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)**
 
-*TBD, if wsl engine on distro is not wsl version 2
+For our projects, we will be using WSL version 2. Upon installation, you can check the version by using the following command:
+```powershell
+wsl -l -v 
+```
+If the version listed is different from 2, you can use the following command, with your chosen distro name, to change it to the desired version:
+```powershell
+wsl --set-version <distro name> 2
+```
+If you decide to change it to another version, all you have to do is change the number after your distro name from the current one to the desired one.
 
 ## Install Ubuntu
 Get **Ubuntu 20.04 LTS** From Microsoft Store 
