@@ -1,4 +1,4 @@
-# **Why use tracking applications
+# **Why use tracking applications**
 Because of the new upcoming projects that will be this year, I chose to start tracking the time per *User Stories* and *Tasks*.
 
 The goal for this tracking move is to start seeing the progress of our employees or collaborators and starting sending reports to the clients based on the maded work. The most important thing that this tool will help us with is that we will be able to start *very realistic estimates* on the work we will do.
