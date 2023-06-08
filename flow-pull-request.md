@@ -33,11 +33,11 @@ Reviewers:
 - Girz Sebastian
 - Sava Remus
 - Muresan Sebastian
-- Claudiu Cmeciu
 
 QA:
 - Girz Sebastian
 - Sava Remus
+- Muresan Sebastian
 - Claudiu Cmeciu
 - Herte Paul
 
